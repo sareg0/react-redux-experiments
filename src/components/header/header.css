@@ -1,0 +1,10 @@
+.header {
+    background-color: darkseagreen;
+    height: 5rem;
+    padding: 2rem;
+    color: white;
+}
+
+.header--title {
+    font-size: 1.5em;
+}

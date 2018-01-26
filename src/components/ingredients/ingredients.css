@@ -1,0 +1,14 @@
+.ingredients {
+    text-align: left;
+    width: 60%;
+    padding-left: 20%;
+}
+
+.ingredients--table {
+    margin-top: 1rem;
+}
+
+.ingredients--table-header {
+    color: grey;
+    font-size: 1.3rem;
+}
