@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
-import './login.css';
-
+import './login.css'
 
 class Login extends Component {
+
+  onLoginClick = () => {
+    console.log("Ye ole LogIn button hath been clicked")
+  }
+
   render () {
     return (
       <div className="login">
         <button
           className="login--button"
-          // this simply calls whatever function we passed in as a prop
-          onClick={this.props.callback}
+          onClick={this.onLoginClick}
         >
           Login
         </button>
