@@ -37,3 +37,13 @@ Branch with Redux state management implemented.
 This branch uses only Redux to handle global state. It's a bit of an overkill to use Redux for this
 basic example, but it gives a pretty good picture of the differences between the different ways to
 handle state in your web application.
+
+## Further Resources
+- React with Redux [slide deck](https://docs.google.com/presentation/d/134dlsOiUgbEl7k2AEXikLHFNdrTIjS5yRk7DhBnGqlA/edit?usp=sharing)
+- [React Component State](https://reactjs.org/docs/state-and-lifecycle.html)
+- React Component State [FAQs](https://reactjs.org/docs/faq-state.html)
+- [Redux Offical Docs](https://redux.js.org/)
+    - [3 Main Principles of Redux](https://redux.js.org/docs/introduction/ThreePrinciples.html)
+    - [Actions/Action Creators](https://redux.js.org/docs/basics/Actions.html)
+    - [Reducers](https://redux.js.org/docs/basics/Reducers.html)
+- React with Redux [example app](https://github.com/cornflourblue/react-redux-registration-login-example)
