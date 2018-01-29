@@ -3,20 +3,19 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import './header.css'
+import Login from '../login/login'
+import Ingredients from '../ingredients/ingredients'
 
-class Header extends Component {
+class mainBody extends Component {
   render () {
     return (
-      <header className="header">
-        <h1 className="header--title">Welcome to Banana Pancakes</h1>
-
+      <div className="main-body">
         {
           this.props.isLoggedIn
-            ? <p>Welcome!</p>
-            : <p>Please login.</p>
+            ? <Ingredients/>
+            : <Login/>
         }
-      </header>
+      </div>
     )
   }
 }
@@ -33,6 +32,7 @@ function mapStateToProps(state) {
 
 // Then we pass the `mapStateToProps` function to `connect`
 // (don't ask why. you just do.)
-const connectedHeader = connect(mapStateToProps)(Header)
+const connectedMainBody = connect(mapStateToProps)(mainBody)
 
-export default connectedHeader
+
+export default connectedMainBody
