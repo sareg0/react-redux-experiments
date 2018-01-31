@@ -15,17 +15,12 @@ class Login extends Component {
     // Then, we can just call the exact action we need. No need to worry
     // about which actual parts of Redux store to update. The action will
     // delegate as needed.
-    this.props.dispatch(setIsLoggedIn(true))
+    this.props.dispatch(setIsLoggedIn())
   }
 
   render () {
     return (
       <div className="login">
-        <div className="login--name-input">
-          <label>What, pray tell, is your name?</label>
-          <input type="text"/>
-        </div>
-
         <button
           className="login--button"
           onClick={this.handleLoginClick}
