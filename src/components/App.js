@@ -5,6 +5,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Login from './login/login'
+import Logout from './logout/logout'
 import Header from './header/header'
 import Ingredients from './ingredients/ingredients'
 
@@ -12,6 +13,7 @@ class App extends Component {
   constructor () {
     super()
     this._logIn = this._logIn.bind(this)
+    this._logOut = this._logOut.bind(this)
 
     // This sets the initial state, when the component is first rendered
     this.state = {
@@ -27,6 +29,12 @@ class App extends Component {
     })
   }
 
+  _logOut () {
+    this.setState({ // `setState` is an internal React function
+      isLoggedIn: false
+    })
+  }
+
   render () {
     return (
       <div className="App">
@@ -36,7 +44,7 @@ class App extends Component {
         <div className="app--body">
           {
             this.state.isLoggedIn
-            ? <Ingredients/>
+            ? <div className="container"><Logout callback={this._logOut}/><Ingredients/></div>
             : <Login callback={this._logIn}/>
           }
         </div>

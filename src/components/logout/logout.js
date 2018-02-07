@@ -1,22 +1,21 @@
-import React, { Component } from 'react'
-import './login.css';
+import React, { Component } from 'react';
+import './logout.css';
 
-
-class Login extends Component {
+class Logout extends Component {
 
   render () {
     return (
-      <div className="login">
+      <div className="logout">
         <button
-          className="login--button"
+          className="logout--button"
           // this simply calls whatever function we passed in as a prop
           onClick={this.props.callback}
         >
-          Login
+          Logout
         </button>
       </div>
     )
   }
 }
 
-export default Login
+export default Logout
