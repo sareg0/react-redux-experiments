@@ -4,7 +4,7 @@
 // to a reducer. A reducer's only job then is to update state.
 
 // use a verb for naming actions
-export const setIsLoggedIn = () => {
+const setIsLoggedIn = () => {
   return {
     type: 'SET_IS_LOGGED_IN',
     // this action receives no data, only the action type
@@ -12,3 +12,10 @@ export const setIsLoggedIn = () => {
     // `true`
   }
 }
+const setIsLoggedOut = () => {
+  return {
+    type: 'SET_IS_LOGGED_OUT',
+  }
+}
+
+export { setIsLoggedIn,setIsLoggedOut }

@@ -13,6 +13,10 @@ const authentication = (state = initialState, action) => {
       return {
         isLoggedIn: true,
       }
+    case 'SET_IS_LOGGED_OUT':
+      return {
+        isLoggedIn: false,
+      }
     default:
       return state
   }

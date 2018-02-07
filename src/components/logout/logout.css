@@ -1,0 +1,9 @@
+.logout {
+  width: 33%;
+  padding: 3rem;
+}
+
+.logout--button {
+  width: 80%;
+  margin-top: 1rem;
+}

@@ -4,6 +4,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Login from '../login/login'
+import Logout from '../logout/logout'
 import Ingredients from '../ingredients/ingredients'
 
 class mainBody extends Component {
@@ -12,7 +13,7 @@ class mainBody extends Component {
       <div className="main-body">
         {
           this.props.isLoggedIn
-            ? <Ingredients/>
+            ? <div><Logout/><Ingredients/></div>
             : <Login/>
         }
       </div>
